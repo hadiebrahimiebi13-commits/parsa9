@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فصل ۹: لوسمی میلوئید مزمن (CML)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .exam-tip {
+            background-color: #fef2f2;
+            border-right: 4px solid #ef4444;
+            color: #991b1b;
+        }
+        .diagnosis-box {
+            background-color: #eff6ff;
+            border-right: 4px solid #3b82f6;
+            color: #1e40af;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #111827;
+            font-weight: 800;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #10b981;
+            border-radius: 2px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .comparison-table th {
+            background-color: #10b981;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .comparison-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 13px;
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            border-right: 4px solid #10b981;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .treatment-box {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-right: 4px solid #3b82f6;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .phase-chronic {
+            background: #d1fae5;
+            color: #065f46;
+            font-weight: 600;
+        }
+        .phase-accelerated {
+            background: #fef3c7;
+            color: #92400e;
+            font-weight: 600;
+        }
+        .phase-blast {
+            background: #fee2e2;
+            color: #991b1b;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="pb-12">
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-6 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">فصل ۹: لوسمی میلوئید مزمن (<bdi dir="ltr">CML</bdi>)</h1>
+                <p class="text-emerald-100 text-sm mt-1">خلاصه جامع هماتولوژی (صفحات ۱۶۵-۱۷۶)</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">
+                ویژه دانشجویان پزشکی
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 space-y-8 mt-4">
+
+        <!-- Navigation -->
+        <nav class="flex gap-2 overflow-x-auto pb-2 text-sm no-scrollbar">
+            <a href="#clinical" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">تظاهرات بالینی</a>
+            <a href="#philadelphia" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">کروموزوم فیلادلفیا</a>
+            <a href="#transformation" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">ترانسفورماسیون</a>
+            <a href="#treatment" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">درمان</a>
+            <a href="#monitoring" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">مانیتورینگ</a>
+            <a href="#pregnancy" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">CML در حاملگی</a>
+            <a href="#chromosomal" class="bg-white px-4 py-2 rounded-full shadow hover:bg-emerald-50 text-emerald-700 whitespace-nowrap">اثرات کروموزومی TKI</a>
+        </nav>
+
+        <!-- Section 1: تظاهرات بالینی و آزمایشگاهی -->
+        <section id="clinical" class="card p-6">
+            <h2 class="section-title text-xl">۱. تظاهرات بالینی و آزمایشگاهی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <!-- اپیدمیولوژی -->
+                <div class="bg-emerald-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-emerald-800 mb-2">اپیدمیولوژی و پاتوژنز</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>اپیدمیولوژی:</strong>
+                            <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                                <li>در مردان کمی شایع‌تر است</li>
+                                <li>سن متوسط در هنگام تشخیص: ۵۵-۶۵ سال</li>
+                                <li>بروز <bdi dir="ltr">CML</bdi> با افزایش سن به آهستگی بالا می‌رود</li>
+                            </ul>
+                        </div>
+                        <div class="highlight-box text-sm">
+                            <strong>پاتوژنز:</strong> <bdi dir="ltr">CML</bdi> به علت ژن <bdi dir="ltr">BCR-ABL1</bdi> که محصول ترانسلوکاسیون ۹ و ۲۲ است، ایجاد می‌گردد
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>ریسک فاکتورها:</strong>
+                            <p class="text-xs mt-1">مهمترین عامل اتیولوژیک <bdi dir="ltr">CML</bdi>، رادیاسیون یونیزان با دوز بالا است</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- تظاهرات بالینی -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-3">تظاهرات بالینی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">نکته ۱۰۰٪ امتحانی</h4>
+                            <p class="text-xs">
+                                <strong>اسپلنومگالی</strong> شایع‌ترین یافته در معاینه بالینی مبتالیان به <bdi dir="ltr">CML</bdi> است
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white p-3 rounded">
+                            <p class="text-xs mb-2">۹۰٪ از مبتالیان به <bdi dir="ltr">CML</bdi> در فاز مزمن تظاهر می‌یابند. بسته به زمان تشخیص اغلب بیماران بی‌علامت بوده و توسط تست‌های غربالگری تشخیص داده می‌شوند</p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">علائم شایع (در صورت علامتدار بودن)</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>علائم ناشی از آنمی:</strong> خستگی، <bdi dir="ltr">Malaise</bdi>، کاهش وزن (اگر بار لوسمی بالا باشد)</li>
+                                <li><strong>علائم ناشی از اسپلنومگالی:</strong> سیری زودرس، درد یا توده در <bdi dir="ltr">LUQ</bdi></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- یافته‌های آزمایشگاهی -->
+                <div class="diagnosis-box p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">یافته‌های آزمایشگاهی</h3>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="highlight-box text-sm">
+                            <strong>تظاهر کلاسیک <bdi dir="ltr">CML</bdi>:</strong> لکوسیتوز شدید (۱۰-۵۰۰ هزار) + ترومبوسیتوز + آنمی
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2"><bdi dir="ltr">CBC</bdi> و الم خون محیطی</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>لکوسیتوز شدید:</strong> همراه با شیفت به چپ و غلبه نوتروفیلی</li>
+                                <li><strong>سلول‌های نابالغ:</strong> باندسل، میلوسیت، متامیلوسیت، پرومیلوسیت و بالست در <bdi dir="ltr">CBC</bdi> مشاهده می‌شود</li>
+                                <li><strong>ترومبوسیتوز:</strong> شایع است</li>
+                                <li><strong>آنمی:</strong> وجود دارد</li>
+                            </ul>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">دو یافته بسیار مهم (۱۰۰٪ امتحانی)</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li><strong>افزایش بازوفیل خون محیطی:</strong> عامل خارش بیماران و بسیار مهم در تشخیص</li>
+                                <li><strong>کاهش آلکالن فسفاتاز لکوسیتی</strong></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">سایر یافته‌های آزمایشگاهی</h4>
+                            <ul class="text-xs space-y-1 pr-4 list-disc list-inside">
+                                <li>ائوزینوفیل‌های خون ممکن است افزایش یابند</li>
+                                <li>افزایش ویتامین <bdi dir="ltr">B12</bdi>، اسید اوریک، <bdi dir="ltr">LDH</bdi> و لیزوزیم</li>
+                                <li>کاهش آلکالن فسفاتاز لکوسیتی</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">بررسی مغز استخوان</h4>
+                            <p class="text-xs">
+                                مغز استخوان هیپرسلوالر بوده و هیپرپلازی شدید در رده میلوئید (نسبت میلوئید به اریتروئید ۱۵ تا ۲۰ به ۱) دیده می‌شود. افزایش فیبروز رتیکولن مغز استخوان شایع است
+                            </p>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">نکته بسیار مهم (۱۰۰٪ امتحانی)</h4>
+                            <p class="text-xs">
+                                در صورت وجود لکوسیتوز پایدار و بدون توجیه یا بدون اسپلنومگالی، حتماً باید جهت رد <bdi dir="ltr">CML</bdi> آزمایش مغز استخوان و آنالیز سیتوژنتیک انجام شود
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: کروموزوم فیلادلفیا -->
+        <section id="philadelphia" class="card p-6 border-t-4 border-purple-500">
+            <h2 class="section-title text-xl text-purple-700">۲. کروموزوم فیلادلفیا</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-purple-800 mb-3">تشخیص <bdi dir="ltr">CML</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="highlight-box text-sm">
+                            <strong>کروموزوم فیلادلفیا (<bdi dir="ltr">Philadelphia Chromosome</bdi>):</strong>
+                            <p class="text-xs mt-1">
+                                تشخیص <bdi dir="ltr">CML</bdi> آسان بوده و براساس وجود <bdi dir="ltr">t(9;22)</bdi> است که در بیشتر از ۹۰٪ موارد یافت می‌گردد
+                            </p>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <h4 class="font-bold mb-2">مکانیسم (۱۰۰٪ امتحانی)</h4>
+                            <p class="text-xs">
+                                جابجایی بین بازوهای بلند کروموزوم‌های ۹ و ۲۲ موجب ایجاد یک اُنکوژن اتصالی به نام <bdi dir="ltr">BCR-ABL1</bdi> می‌شود که به آن کروموزوم فیادلفیا گفته می‌شود
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- روش‌های تشخیصی -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-3">روش‌های تشخیصی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">آنالیز سیتوژنتیک روتین (استاندارد طلایی)</h4>
+                            <p class="text-xs">
+                                تشخیص <bdi dir="ltr">CML</bdi> باید همیشه براساس آنالیز مغز استخوان به همراه ارزیابی سیتوژنتیک روتین باشد. آنالیز مغز استخوان، وجود کروموزوم فیالدلفیا را تائید می‌کند
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">روش‌های <bdi dir="ltr">PCR</bdi> و <bdi dir="ltr">FISH</bdi></h4>
+                            <p class="text-xs mb-2">
+                                می‌توان جهت تشخیص <bdi dir="ltr">CML</bdi> و پاسخ به درمان در بیماران تحت درمان با داروهای <bdi dir="ltr">TKI</bdi> استفاده کرد. این تست‌ها را می‌توان روی نمونه‌های محیطی انجام داد
+                            </p>
+                            <div class="bg-yellow-100 p-2 rounded mt-2 text-xs">
+                                <strong>عیب:</strong> چون روش‌های <bdi dir="ltr">PCR</bdi> و <bdi dir="ltr">FISH</bdi> که بر روی خون محیطی انجام می‌شود نتایج مثبت و منفی کاذب دارند، تشخیص <bdi dir="ltr">CML</bdi> باید همواره براساس آنالیز مغز استخوان باشد
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">موارد خاص</h4>
+                            <p class="text-xs">
+                                در بعضی از بیماران مبتلا به <bdi dir="ltr">CML</bdi>، کروموزوم فیالدلفیا با آنالیز استاندارد سیتوژنتیک بر روی مغز استخوان تشخیص داده نمی‌شود؛ در این افراد به کمک روش‌های <bdi dir="ltr">FISH</bdi> یا <bdi dir="ltr">PCR</bdi> می‌توان <bdi dir="ltr">BCR-ABL1</bdi> را تشخیص داد
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: ترانسفورماسیون -->
+        <section id="transformation" class="card p-6 border-t-4 border-orange-500">
+            <h2 class="section-title text-xl text-orange-700">۳. ترانسفورماسیون <bdi dir="ltr">CML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-orange-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-orange-800 mb-2">تعریف</h3>
+                    <p class="text-sm text-orange-900">
+                        به پیشرفت <bdi dir="ltr">CML</bdi> و تبدیل به فاز <bdi dir="ltr">Accelerated</bdi>، ترانسفورماسیون گفته می‌شود
+                    </p>
+                </div>
+
+                <!-- یافته‌های بالینی -->
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                    <h3 class="font-bold text-yellow-800 mb-3">یافته‌های بالینی</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-xs">پیشرفت <bdi dir="ltr">CML</bdi> معمولاً با موارد زیر مشخص می‌گردد:</p>
+                        <ul class="text-xs space-y-1 pr-4 list-disc list-inside bg-white p-3 rounded">
+                            <li>لکوسیتوز مقاوم به درمان</li>
+                            <li>افزایش آنمی</li>
+                            <li>تب و عالئم <bdi dir="ltr">Constitutional</bdi></li>
+                            <li>افزایش بالست‌ها و بازوفیل‌ها در خون محیطی یا مغز استخوان</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- مرحله Accelerated -->
+                <div class="bg-amber-50 p-4 rounded-lg border border-amber-100">
+                    <h3 class="font-bold text-amber-800 mb-3">معیارهای مرحله <bdi dir="ltr">Accelerated</bdi> (تسریع یافته)</h3>
+                    <div class="exam-tip p-3 rounded mb-3">
+                        <strong>توجه:</strong> ۵ تا ۱۰٪ بیماران در بدو مراجعه در فاز بالستیک یا تسریع یافته هستند. پیش‌آگهی این گروه با درمان <bdi dir="ltr">TKI</bdi> به مراتب بهتر گردیده است
+                    </div>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۱</span>
+                            <span>بالست خون محیطی ≥ ۱۵٪</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۲</span>
+                            <span>بالست خون محیطی + پرومیلوسیت ≥ ۳۰٪</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۳</span>
+                            <span>بازوفیل خون محیطی ≥ ۲۰٪</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۴</span>
+                            <span>تکامل کلونال سیتوژنتیک (وجود اختلالات کروموزومی اضافی عالوه بر کروموزوم فیالدلفیا)</span>
+                        </div>
+                        <div class="bg-white p-3 rounded flex items-start">
+                            <span class="bg-amber-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs ml-2 flex-shrink-0">۵</span>
+                            <span>ترومبوسیتوپنی < ۱۰۰,۰۰۰ (غیرمرتبط با درمان)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مرحله بالستیک -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">مرحله بالستیک <bdi dir="ltr">CML</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="highlight-box text-sm">
+                            <strong>تعریف:</strong> مرحله بالستیک با وجود ۳۰٪ یا بیشتر بالست در خون محیطی یا مغز استخوان و یا وجود بالست در خارج مغز استخوان (معمولاً پوست، بافت نرم یا ضایعات لیتیک استخوان) مشخص می‌گردد
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">مرحله بالستیک میلوئید (۶۰٪)</h4>
+                            <p class="text-xs">
+                                معمولاً میلوئید بوده ولی ممکن است به صورت غیرشایع اریتروئید، پرومیلوسیتیک، منوسیتیک یا مگاکاریوسیتیک باشد
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">مرحله بالستیک لنفوئیدی (۲۵٪)</h4>
+                            <p class="text-xs mb-2">
+                                لنفوسیت‌ها داکسی‌نوکلئوتید ترانسفراز مثبت و پراکسیداز منفی می‌باشند و مارکرهای لنفوئید (<bdi dir="ltr">CD10, CD19, CD20, CD22</bdi>) را بیان می‌کنند
+                            </p>
+                            <div class="exam-tip p-2 rounded mt-2 text-xs">
+                                <strong>نکته مهم:</strong> <bdi dir="ltr">CML</bdi> با فاز بالستیک لنفوئیدی برخالف سایر انواع فاز بالستیک به شیمی‌درمانی <bdi dir="ltr">Anti-ALL</bdi> (مثل <bdi dir="ltr">Hyper-CVAD</bdi> شامل سیکلوفسفوماید، وین‌کریستین، دوکسوروبیسین و دگزامتازون) در همراهی با <bdi dir="ltr">TKI</bdi> پاسخ می‌دهد
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عوامل پیش‌آگهی بد -->
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-gray-800 mb-3">عوامل مؤثر در پیش‌آگهی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">اختلالات کروموزومی همراه با پیش‌آگهی بد</h4>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>تریزومی ۸</li>
+                                <li><bdi dir="ltr">Double Ph</bdi></li>
+                                <li>ایزوکروموزومی ۱۷</li>
+                                <li>حذف <bdi dir="ltr">17p</bdi> و <bdi dir="ltr">-20q</bdi></li>
+                                <li>ناهنجاری <bdi dir="ltr">3q26.2</bdi></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">سایر عوامل</h4>
+                            <ul class="text-xs pr-4 space-y-1 list-disc list-inside">
+                                <li>افزایش درصد بازوفیل‌های خون محیطی</li>
+                                <li>افزایش درصد بالست‌ها در خون محیطی و مغز استخوان</li>
+                                <li>در ۱۰٪ بیماران، درصد بالست‌ها و بازوفیل‌های مغز استخوان بسیار بیشتر از خون محیطی می‌باشد که نشان‌دهنده پیش‌آگهی بد یا تبدیل بیماری (<bdi dir="ltr">Transformation</bdi>) است</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: درمان -->
+        <section id="treatment" class="card p-6 border-t-4 border-blue-500">
+            <h2 class="section-title text-xl text-blue-700">۴. درمان <bdi dir="ltr">CML</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="exam-tip p-4 rounded-lg">
+                    <h3 class="font-bold mb-2">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        نکته بسیار مهم (۱۰۰٪ امتحانی)
+                    </h3>
+                    <p class="text-sm">
+                        هم‌اکنون خط اول درمان <bdi dir="ltr">CML</bdi>، درمان با داروهای مهارکننده تیروزین کیناز (<bdi dir="ltr">TKI</bdi>) مثل ایماتینیب است
+                    </p>
+                </div>
+
+                <!-- انقلاب ایماتینیب -->
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                    <h3 class="font-bold text-blue-800 mb-3">انقلاب درمانی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="highlight-box text-sm">
+                            <p class="mb-2">
+                                درمان <bdi dir="ltr">CML</bdi> با داروهای مهارکننده تیروزین کیناز (<bdi dir="ltr">TKI</bdi>) مثل ایماتینیب، انقلابی در درمان و پیش‌آگهی <bdi dir="ltr">CML</bdi> ایجاد نمود
+                            </p>
+                            <p class="text-xs">
+                                با ورود ایماتینیب به پروتکل درمان، میزان بقای ۱۰ ساله <bdi dir="ltr">CML</bdi> از ۳۰٪ به ۸۵٪ افزایش یافت
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- داروهای خط اول -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-blue-800 mb-3">داروهای خط اول درمان</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="mb-3">چهار داروی <bdi dir="ltr">TKI</bdi> که در خط اول درمان <bdi dir="ltr">CML</bdi> به کار برده می‌شوند:</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <div class="bg-white p-3 rounded">
+                                <strong class="text-xs">۱. ایماتینیب (<bdi dir="ltr">Imatinib</bdi>)</strong>
+                                <p class="text-xs mt-1">۴۰۰ میلی‌گرم خوراکی در روز</p>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <strong class="text-xs">۲. نیلوتینیب (<bdi dir="ltr">Nilotinib</bdi>)</strong>
+                                <p class="text-xs mt-1">۳۰۰ میلی‌گرم خوراکی دو بار در روز با معده خالی</p>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <strong class="text-xs">۳. داساتینیب (<bdi dir="ltr">Dasatinib</bdi>)</strong>
+                                <p class="text-xs mt-1">۱۰۰ میلی‌گرم خوراکی روزانه</p>
+                            </div>
+                            <div class="bg-white p-3 rounded">
+                                <strong class="text-xs">۴. بوسوتینیب (<bdi dir="ltr">Bosutinib</bdi>)</strong>
+                                <p class="text-xs mt-1">۴۰۰ میلی‌گرم خوراکی روزانه</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- پوناتینیب -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">پوناتینیب (<bdi dir="ltr">Ponatinib</bdi>)</h3>
+                    <div class="exam-tip p-3 rounded">
+                        <h4 class="font-bold mb-2">نکته ویژه (۱۰۰٪ امتحانی)</h4>
+                        <p class="text-xs">
+                            پوناتینیب تنها داروی <bdi dir="ltr">TKI</bdi> است که در موتاسیون <bdi dir="ltr">T315I</bdi> مؤثر است. این دارو در خط اول درمان <bdi dir="ltr">CML</bdi> به کار برده نمی‌شود
+                        </p>
+                    </div>
+                </div>
+
+                <!-- پیوند مغز استخوان -->
+                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                    <h3 class="font-bold text-purple-800 mb-3">پیوند آلوژنیک مغز استخوان</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <p class="text-xs">
+                                پیوند آلوژنیک مغز استخوان یک روش درمانی علاج‌بخش بوده که هم‌اکنون به عنوان <strong>خط دوم درمان</strong> بعد از شکست درمان با داروهای مهارکننده تیروزین کیناز به کار برده می‌شود
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- هدف درمان -->
+                <div class="highlight-box">
+                    <h3 class="font-bold mb-2">هدف از درمان</h3>
+                    <div class="space-y-2 text-sm">
+                        <p class="text-xs mb-2">
+                            هدف از درمان رسیدن به <strong>پاسخ سیتوژنتیک کامل</strong> است. دستیابی به پاسخ سیتوژنتیک کامل تنها فاکتور مرتبط با درمان است که موجب افزایش بقاء می‌گردد
+                        </p>
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-xs">هدف نهایی:</strong>
+                            <p class="text-xs mt-1">
+                                هدف نهایی ریشه‌کنی بیماری و رسیدن به بهبود مولکولی و بازگشت خونسازی غیرنئوپالستیک است. اولین قدم در رسیدن به این هدف فقدان <bdi dir="ltr">BCR-ABL1</bdi> به مدت حداقل ۲ سال است
+                            </p>
+                        </div>
+                        <div class="exam-tip p-3 rounded mt-2">
+                            <strong>نکته اصلی:</strong>
+                            <p class="text-xs mt-1">
+                                فقدان دستیابی به پاسخ سیتوژنتیک کامل یا پاسخ مولکولی ماژور منفی نشدن <bdi dir="ltr">BCR-ABL1</bdi> نباید به عنوان اندیکاسیون تغییر <bdi dir="ltr">TKI</bdi> یا تصمیم به پیوند آلوژنیک مغز استخوان در نظر گرفته شود
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: مانیتورینگ درمان -->
+        <section id="monitoring" class="card p-6 border-t-4 border-indigo-500">
+            <h2 class="section-title text-xl text-indigo-700">۵. مانیتورینگ درمان</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="exam-tip p-4 rounded-lg">
+                    <h3 class="font-bold mb-3">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        مهم‌ترین فاکتور پیش‌آگهی (۱۰۰٪ امتحانی)
+                    </h3>
+                    <p class="text-sm mb-2">
+                        <strong>پاسخ کامل سیتوژنتیک در طی ۱۲ ماه درمان با ایماتینیب</strong> و پایداری بعدی آن به عنوان تنها عامل پروگنوستیک همراه با افزایش بقاء بوده و به عنوان هدف اصلی درمان در نظر گرفته می‌شود
+                    </p>
+                    <div class="bg-white p-3 rounded text-xs">
+                        <strong>نکته:</strong> عدم رسیدن به پاسخ کامل سیتوژنتیک کامل در طی ۱۲ ماه یا عود سیتوژنتیک یا هماتولوژیک نشان‌دهنده شکست درمان بوده و الزم است درمان تغییر یابد
+                    </div>
+                </div>
+
+                <!-- پایش درمان -->
+                <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                    <h3 class="font-bold text-indigo-800 mb-3">پروتکل پایش</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">مرحله اول (تا رسیدن به پاسخ سیتوژنتیک کامل)</h4>
+                            <p class="text-xs">
+                                بیماران باید تا رسیدن به پاسخ سیتوژنتیک کامل به صورت دقیق مانیتور شوند
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">مرحله دوم (بعد از پاسخ سیتوژنتیک کامل)</h4>
+                            <p class="text-xs mb-2">
+                                بعد از رسیدن به پاسخ سیتوژنتیک کامل، باید هر ۶ ماه، خون محیطی با روش <bdi dir="ltr">PCR</bdi> مورد ارزیابی قرار گیرد
+                            </p>
+                            <div class="bg-indigo-100 p-2 rounded mt-2 text-xs">
+                                <strong>نکته:</strong> در بیماران با خطر بالای تغییر در <bdi dir="ltr">BCR-ABL1</bdi> باید این پایش هر ۳ ماه یک بار صورت پذیرد
+                            </div>
+                        </div>
+
+                        <div class="highlight-box text-xs">
+                            <strong>تأکید:</strong> دستیابی به پاسخ سیتوژنتیک کامل، <bdi dir="ltr">Endpoint</bdi> اصلی درمان می‌باشد؛ لذا دستیابی به پاسخ سیتوژنتیک کامل تنها <bdi dir="ltr">Endpoint</bdi> افزایش بقاء می‌باشد
+                        </div>
+                    </div>
+                </div>
+
+                <!-- شکست درمان -->
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <h3 class="font-bold text-red-800 mb-3">شکست درمان</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong class="text-xs">با اولین نشانه عود سیتوژنتیک، درمان باید تغییر یابد</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: درمان CML در حاملگی -->
+        <section id="pregnancy" class="card p-6 border-t-4 border-pink-500">
+            <h2 class="section-title text-xl text-pink-700">۶. درمان <bdi dir="ltr">CML</bdi> در حاملگی</h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="exam-tip p-4 rounded-lg">
+                    <h3 class="font-bold mb-2">
+                        <svg class="w-5 h-5 inline ml-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        نکته بسیار مهم (۱۰۰٪ امتحانی)
+                    </h3>
+                    <p class="text-sm">
+                        در دوران حاملگی باید داروهای <bdi dir="ltr">TKI</bdi> مثل ایماتینیب قطع شود
+                    </p>
+                </div>
+
+                <!-- قطع TKI -->
+                <div class="bg-pink-50 p-4 rounded-lg border border-pink-100">
+                    <h3 class="font-bold text-pink-800 mb-3">قطع داروهای <bdi dir="ltr">TKI</bdi></h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <p class="text-xs mb-2">
+                                در زنان مبتلا به <bdi dir="ltr">CML</bdi> که حامله می‌شوند باید داروهای <bdi dir="ltr">TKI</bdi> بالفاصله قطع شوند
+                            </p>
+                            <div class="bg-red-100 p-2 rounded text-xs">
+                                <strong>هشدار:</strong> از ۱۲۵ زن حامله‌ای که بالفاصله ایماتینیب خود را قطع کرده بودند، ۳ نوزاد با مالفورماسیون کلیوی، تراتوژن اسکلتی و چشمی به دنیا آمدند که نشان‌دهنده تراتوژن بودن غیرشایع ایماتینیب است. داساتینیب بیشتر از ایماتینیب موجب مالفورماسیون‌های جنینی می‌شود
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- جایگزین‌های درمانی -->
+                <div class="treatment-box">
+                    <h3 class="font-bold text-blue-800 mb-3">جایگزین‌های درمانی در حاملگی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">۱. لکوفرز (<bdi dir="ltr">Leukapheresis</bdi>)</h4>
+                            <p class="text-xs">
+                                در سه ماهه اول برای لکوسیتوز شدید استفاده می‌شود
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">۲. هیدروکسی اوره (<bdi dir="ltr">Hydroxyurea</bdi>)</h4>
+                            <p class="text-xs">
+                                می‌توان از سه ماهه دوم تا زمان زایمان تجویز کرد
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">۳. اینترفرون آلفا (<bdi dir="ltr">Interferon-α</bdi>)</h4>
+                            <p class="text-xs mb-1">
+                                هم می‌توان در دوران حاملگی استفاده کرد
+                            </p>
+                            <div class="bg-yellow-100 p-2 rounded text-xs">
+                                <strong>توجه:</strong> این دارو ریسک سقط خودبخودی را بالا می‌برد
+                            </div>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded mt-3">
+                            <h4 class="font-bold mb-2">توضیح ضروری</h4>
+                            <p class="text-xs">
+                                لکوفرز فقط در موارد لکوسیتوز شدید استفاده می‌شود. اگر تعداد گلبول‌های سفید طبیعی باشد، فقط قطع ایماتینیب کفایت می‌کند
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: اثرات کروموزومی TKI -->
+        <section id="chromosomal" class="card p-6 border-t-4 border-teal-500">
+            <h2 class="section-title text-xl text-teal-700">۷. اثرات کروموزومی درمان با <bdi dir="ltr">TKI</bdi></h2>
+            
+            <div class="space-y-4 mt-4">
+                <div class="bg-teal-50 p-4 rounded-lg">
+                    <h3 class="font-bold text-teal-800 mb-3">تغییرات کروموزومی در سلول‌های فیالدلفیا منفی</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <p class="text-xs mb-2">
+                                درمان با داروهای <bdi dir="ltr">TKI</bdi> می‌تواند سبب تغییرات کروموزومی در سلول‌های فیالدلفیا منفی شود
+                            </p>
+                            <div class="highlight-box text-xs">
+                                <strong>این موارد عبارتند از:</strong>
+                                <ul class="pr-4 mt-2 space-y-1 list-disc list-inside">
+                                    <li>از بین رفتن کروموزوم <bdi dir="ltr">Y</bdi></li>
+                                    <li>تریزومی ۸</li>
+                                    <li><bdi dir="ltr">-20q</bdi></li>
+                                    <li>اختلالات کروموزوم ۵ و ۷</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-3 rounded">
+                            <h4 class="font-semibold text-xs mb-2">سیر بالینی</h4>
+                            <p class="text-xs mb-2">
+                                اکثر اختلالات کروموزومی خودبه‌خود از بین می‌روند
+                            </p>
+                            <div class="bg-yellow-100 p-2 rounded text-xs">
+                                <strong>توجه:</strong> به طور نادر، اختلالات کروموزوم‌های ۵ و ۷ به سندرم میلودیسپالستیک یا <bdi dir="ltr">AML</bdi> تبدیل می‌گردند
+                            </div>
+                        </div>
+
+                        <div class="exam-tip p-3 rounded">
+                            <strong>نکته:</strong> این تغییرات در سلول‌های فیلادلفیا منفی رخ می‌دهد و معمولاً خودبه‌خود برطرف می‌شوند و نیاز به تغییر درمان ندارند
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Follow Up -->
+        <section class="card p-6 bg-gray-800 text-white">
+            <h2 class="text-xl font-bold mb-4 text-yellow-400">نکات کلیدی <bdi dir="ltr">Follow Up</bdi></h2>
+            
+            <div class="space-y-3 text-sm">
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱. پاتوژنز:</strong> <bdi dir="ltr">CML</bdi> به علت ژن <bdi dir="ltr">BCR-ABL1</bdi> که محصول ترانسلوکاسیون ۹ و ۲۲ است، ایجاد می‌گردد
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۲. تظاهر کلاسیک:</strong> لکوسیتوز شدید (۱۰-۵۰۰ هزار) + ترومبوسیتوز + آنمی + اسپلنومگالی
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۳. اسپلنومگالی:</strong> شایع‌ترین یافته در معاینه بالینی (۱۰۰٪ امتحانی)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۴. دو یافته مهم در <bdi dir="ltr">CBC</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>افزایش بازوفیل (عامل خارش)</li>
+                        <li>کاهش آلکالن فسفاتاز لکوسیتی</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۵. تشخیص:</strong> تائید تشخیص <bdi dir="ltr">CML</bdi> براساس وجود <bdi dir="ltr">t(9;22)</bdi> بوده که به آن کروموزوم فیالدلفیا گفته می‌شود (۹۰٪ موارد)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۶. استاندارد طلایی:</strong> تشخیص <bdi dir="ltr">CML</bdi> باید همواره براساس آنالیز مغز استخوان به همراه ارزیابی سیتوژنتیک روتین تشخیص داده شود
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۷. اختلالات کروموزومی با پیش‌آگهی بد:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>تریزومی ۸، <bdi dir="ltr">Double Ph</bdi></li>
+                        <li>ایزوکروموزومی ۱۷، حذف <bdi dir="ltr">17p</bdi> و <bdi dir="ltr">-20q</bdi></li>
+                        <li>وجود تغییرات کروموزومی اضافی عالوه بر کروموزوم فیالدلفیا نشانه ورود به فاز تسریع شده است</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۸. معیارهای مرحله <bdi dir="ltr">Accelerated</bdi>:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>بالست خون محیطی ≥ ۱۵٪</li>
+                        <li>بالست + پرومیلوسیت ≥ ۳۰٪</li>
+                        <li>بازوفیل ≥ ۲۰٪</li>
+                        <li>تکامل کلونال سیتوژنتیک</li>
+                        <li>ترومبوسیتوپنی < ۱۰۰,۰۰۰ (غیرمرتبط با درمان)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۹. مرحله بالستیک:</strong> با وجود ≥ ۳۰٪ بالست در خون محیطی یا مغز استخوان مشخص می‌گردد
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۰. خط اول درمان:</strong> داروهای مهارکننده تیروزین کیناز (<bdi dir="ltr">TKI</bdi>) مثل ایماتینیب (۱۰۰٪ امتحانی)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۱. چهار داروی خط اول:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>ایماتینیب ۴۰۰ میلی‌گرم/روز</li>
+                        <li>نیلوتینیب ۳۰۰ میلی‌گرم دو بار/روز (با معده خالی)</li>
+                        <li>داساتینیب ۱۰۰ میلی‌گرم/روز</li>
+                        <li>بوسوتینیب ۴۰۰ میلی‌گرم/روز</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۲. پوناتینیب:</strong> تنها <bdi dir="ltr">TKI</bdi> مؤثر در موتاسیون <bdi dir="ltr">T315I</bdi> (در خط اول استفاده نمی‌شود)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۳. پیوند آلوژنیک:</strong> خط دوم درمان بعد از شکست <bdi dir="ltr">TKI</bdi>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۴. هدف اصلی درمان:</strong> دستیابی به پاسخ سیتوژنتیک کامل (۱۰۰٪ امتحانی)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۵. مهم‌ترین فاکتور پیش‌آگهی:</strong> پاسخ کامل سیتوژنتیک در طی ۱۲ ماه درمان با ایماتینیب و پایداری بعدی آن
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۶. مانیتورینگ:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>قبل از پاسخ کامل: مانیتورینگ دقیق</li>
+                        <li>بعد از پاسخ کامل: هر ۶ ماه یک بار <bdi dir="ltr">PCR</bdi></li>
+                        <li>در بیماران پرخطر: هر ۳ ماه یک بار</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۷. در حاملگی:</strong>
+                    <ul class="text-xs pr-4 mt-1 space-y-1 list-disc list-inside">
+                        <li>قطع فوری <bdi dir="ltr">TKI</bdi> (ایماتینیب)</li>
+                        <li>لکوفرز در سه ماهه اول (فقط در لکوسیتوز شدید)</li>
+                        <li>هیدروکسی اوره و اینترفرون آلفا می‌توان استفاده کرد</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۸. اثرات کروموزومی <bdi dir="ltr">TKI</bdi>:</strong> تغییرات کروموزومی در سلول‌های فیالدلفیا منفی (معمولاً خودبه‌خود برطرف می‌شوند)
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۱۹. شکست درمان:</strong> با اولین نشانه عود سیتوژنتیک، درمان باید تغییر یابد
+                </div>
+
+                <div class="bg-gray-700 p-3 rounded">
+                    <strong>۲۰. انقلاب درمانی:</strong> با ورود ایماتینیب، بقای ۱۰ ساله <bdi dir="ltr">CML</bdi> از ۳۰٪ به ۸۵٪ افزایش یافت
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-gray-400 text-xs py-8">
+        تهیه شده جهت مرور سریع امتحانات دستیاری و پره انترنی
+        <br>
+        فصل ۹ هماتولوژی: لوسمی میلوئید مزمن (<bdi dir="ltr">CML</bdi>) (صفحات ۱۶۵-۱۷۶)
+        <br>
+        شامل ۷ بخش اصلی و بیش از ۶۰ نکته امتحانی کلیدی
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active state for navbar
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('bg-emerald-100', 'text-emerald-900'));
+                this.classList.add('bg-emerald-100', 'text-emerald-900');
+            });
+        });
+    </script>
+</body>
+</html>
